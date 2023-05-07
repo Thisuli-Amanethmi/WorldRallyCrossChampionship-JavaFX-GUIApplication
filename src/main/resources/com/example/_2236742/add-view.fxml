@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._2236742.AddController">
+   <top>
+      <AnchorPane prefHeight="499.0" prefWidth="599.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="504.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.12941177189350128" green="0.07450980693101883" blue="0.3686274588108063" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="153.0" layoutY="26.0" text="Add Driver Details" textFill="#130230">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="153.0" prefHeight="27.0" prefWidth="148.0" text="Name                  :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="191.0" prefHeight="27.0" prefWidth="150.0" text="Age                      :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="232.0" prefHeight="27.0" prefWidth="150.0" text="Car                       :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="272.0" prefHeight="27.0" prefWidth="150.0" text="Team                   :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="316.0" prefHeight="27.0" prefWidth="150.0" text="Current points     :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addName" layoutX="217.0" layoutY="153.0" prefHeight="26.0" prefWidth="330.0" promptText="Name" />
+            <TextField fx:id="addAge" layoutX="217.0" layoutY="191.0" prefHeight="26.0" prefWidth="330.0" promptText="Age" />
+            <TextField fx:id="addCar" layoutX="217.0" layoutY="232.0" prefHeight="26.0" prefWidth="330.0" promptText="Car" />
+            <TextField fx:id="addTeam" layoutX="217.0" layoutY="272.0" prefHeight="26.0" prefWidth="330.0" promptText="Team" />
+            <TextField fx:id="addCurrentPoints" layoutX="217.0" layoutY="316.0" prefHeight="26.0" prefWidth="330.0" promptText="Current points" />
+            <Button fx:id="buttonAdd" layoutX="144.0" layoutY="412.0" mnemonicParsing="false" onAction="#addOnClick" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #4a4a4b;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonHomePage" layoutX="328.0" layoutY="412.0" mnemonicParsing="false" onAction="#homePageButtonOnClick" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #4a4a4b;" text="HOME PAGE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="addTextMessage" layoutX="27.0" layoutY="93.0" prefHeight="18.0" prefWidth="532.0" textAlignment="CENTER" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
